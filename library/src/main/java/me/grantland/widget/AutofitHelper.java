@@ -23,10 +23,6 @@ import java.util.ArrayList;
 /**
  * A helper class to enable automatically resizing {@link TextView}`s {@code textSize} to fit
  * within its bounds.
- *
- * @attr ref R.styleable.AutofitTextView_sizeToFit
- * @attr ref R.styleable.AutofitTextView_minTextSize
- * @attr ref R.styleable.AutofitTextView_precision
  */
 public class AutofitHelper {
 
@@ -314,8 +310,6 @@ public class AutofitHelper {
      * is adjusted based on the current density and user font size preference.
      *
      * @param size The scaled pixel size.
-     *
-     * @attr ref me.grantland.R.styleable#AutofitTextView_minTextSize
      */
     public AutofitHelper setMinTextSize(float size) {
         return setMinTextSize(TypedValue.COMPLEX_UNIT_SP, size);
@@ -327,8 +321,6 @@ public class AutofitHelper {
      *
      * @param unit The desired dimension unit.
      * @param size The desired size in the given units.
-     *
-     * @attr ref me.grantland.R.styleable#AutofitTextView_minTextSize
      */
     public AutofitHelper setMinTextSize(int unit, float size) {
         Context context = mTextView.getContext();
@@ -362,8 +354,6 @@ public class AutofitHelper {
      * is adjusted based on the current density and user font size preference.
      *
      * @param size The scaled pixel size.
-     *
-     * @attr ref android.R.styleable#TextView_textSize
      */
     public AutofitHelper setMaxTextSize(float size) {
         return setMaxTextSize(TypedValue.COMPLEX_UNIT_SP, size);
@@ -375,8 +365,6 @@ public class AutofitHelper {
      *
      * @param unit The desired dimension unit.
      * @param size The desired size in the given units.
-     *
-     * @attr ref android.R.styleable#TextView_textSize
      */
     public AutofitHelper setMaxTextSize(int unit, float size) {
         Context context = mTextView.getContext();
